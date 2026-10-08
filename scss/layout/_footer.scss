@@ -1,0 +1,47 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.main-footer {
+    background-color: $rosa-principal;
+    color: $blanco;
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+
+    .footer-title {
+        font-family: $font-titulos;
+        margin-bottom: 1.5rem;
+        color: $rosa-medio;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        
+        li a {
+            color: $blanco;
+            text-decoration: none;
+            @include transicion;
+
+            &:hover {
+                color: $rosa-principal;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .social-icons {
+        font-size: 1.5rem;
+        @include flex-center;
+        gap: 20px;
+
+        i {
+            color: $blanco;
+            @include transicion;
+
+            &:hover {
+                color: $rosa-principal;
+                transform: scale(1.2);
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.wpp-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    @include flex-center;
+    font-size: 30px;
+    z-index: 9999;
+    @include sombra-suave;
+    @include transicion;
+
+    &:hover {
+        transform: scale(1.1) rotate(10deg);
+        color: white;
+    }
+}

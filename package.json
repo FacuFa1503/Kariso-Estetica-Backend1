@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "Este proyecto es una aplicación web interactiva desarrollada para **Kariso Estética** que automatiza la cotización de servicios y optimiza la gestión de turnos comerciales. El sistema transforma una interfaz estática en una plataforma dinámica, escalable y centrada en la experiencia de usuario (UX).",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "express-handlebars": "^9.0.2",
+    "mongoose": "^9.11.1",
+    "mongoose-paginate-v2": "^1.9.5",
+    "socket.io": "^4.8.4",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

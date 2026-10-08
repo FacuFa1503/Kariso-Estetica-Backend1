@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.brand-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+
+    h1 {
+        color: $rosa-principal !important;
+        @include transicion;
+        cursor: default;
+        position: relative;
+        z-index: 2;
+
+        &:hover {
+            transform: scale(1.1);
+            color: $bordo-oscuro !important;
+        }
+    }
+
+    &:hover::before, &:hover::after {
+        content: "💅";
+        position: absolute;
+        animation: lluvia 1s infinite linear;
+        opacity: 0;
+    }
+
+    &:hover::before { left: 15%; content: "💅"; animation-delay: 0.2s; }
+    &:hover::after { right: 15%; content: "✨"; animation-delay: 0.5s; }
+}
+
+@keyframes lluvia {
+    0% { transform: translateY(0); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-50px); opacity: 0; }
+}

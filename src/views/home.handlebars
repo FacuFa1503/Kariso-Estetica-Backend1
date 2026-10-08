@@ -1,0 +1,11 @@
+<h1>Listado de Servicios Estéticos</h1>
+<div class="services-container">
+  {{#each services}}
+    <div class="service-card">
+      <h3>{{this.title}}</h3>
+      <p>{{this.description}}</p>
+      <p><strong>Duración:</strong> {{this.duration}} min</p>
+      <p><strong>Precio:</strong> ${{this.price}}</p>
+    </div>
+  {{/each}}
+</div>

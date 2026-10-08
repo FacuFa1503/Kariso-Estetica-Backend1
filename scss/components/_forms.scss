@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.custom-card-check {
+    border: 2px solid $rosa-medio;
+    border-radius: 10px;
+    padding: 10px 15px 10px 35px;
+    @include transicion;
+    cursor: pointer;
+    background-color: $blanco;
+
+    &:hover {
+        background-color: rgba($rosa-medio, 0.1);
+        transform: translateY(-2px);
+    }
+
+    &:has(.form-check-input:checked),
+    &:has(.check-servicio:checked) {
+        border-color: $rosa-principal;
+        background-color: rgba($rosa-principal, 0.05);
+        box-shadow: 0 4px 10px rgba($rosa-principal, 0.2);
+        
+        span {
+            color: $bordo-oscuro;
+            font-weight: 600;
+        }
+    }
+}

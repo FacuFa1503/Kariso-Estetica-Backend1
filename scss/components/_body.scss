@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.btn-outline-body {
+    border: 2px solid $rosa-principal;
+    color: $rosa-principal;
+    background: transparent;
+    font-weight: bold;
+    @include transicion;
+
+    &:hover {
+        background-color: $rosa-principal;
+        color: $blanco;
+    }
+}
+.divider-pink {
+    width: 40px;
+    height: 3px;
+    background-color: $rosa-principal;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+.info-item {
+    padding: 20px;
+    background: transparent;
+    
+    h5 {
+        color: $bordo-oscuro;
+        margin-bottom: 5px;
+    }
+}

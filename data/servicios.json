@@ -1,0 +1,17 @@
+[
+  { "id": 1, "nombre": "Alisado con Laser", "precio": 25000, "categoria": "Tratamientos capilares" },
+  { "id": 2, "nombre": "Depilacion sistema español", "precio": 30000, "categoria": "Depilacion" },
+  { "id": 3, "nombre": "Sesion de Reiki", "precio": 25000, "categoria": "Bienestar general"},
+  { "id": 4, "nombre": "Masaje relajante", "precio": 20000, "categoria": "Bienestar general"},
+  { "id": 5, "nombre": "Maderoterapia", "precio": 35000, "categoria": "Bienestar general"},
+  { "id": 6, "nombre": "Radiofrecuencia", "precio": 30000, "categoria": "Bienestar general"},
+  { "id": 7, "nombre": "Tratamiento facial", "precio": 30000, "categoria":"Bienestar general"},
+  { "id": 8, "nombre": "Pedicuria basica", "precio": 20000, "categoria": "Pedicuria"},
+  { "id": 9, "nombre": "Pedicuria y esmaltado", "precio": 25000, "categoria": "Pedicuria"},
+  { "id": 10, "nombre": "Pedicuria spa", "precio": 35000, "categoria": "Pedicuria"},
+  { "id": 11, "nombre": "Manicuria basica", "precio": 20000, "categoria": "Manicuria"},
+  { "id": 12, "nombre": "Manicuria y esmaltado", "precio": 25000, "categoria": "Manicuria"},
+  { "id": 13, "nombre": "Capping", "precio": 20000, "categoria": "Manicuria"},
+  { "id": 14, "nombre": "Soft gel", "precio": 25000, "categoria": "Manicuria"},
+  { "id": 15, "nombre": "Uñas acrilicas", "precio": 35000, "categoria": "Manicuria"}
+  ]

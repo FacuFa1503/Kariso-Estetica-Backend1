@@ -1,0 +1,23 @@
+// Abstracts
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+
+// Base
+@use 'base/reset';
+@use 'base/base';
+
+// Layout
+@use 'layout/navbar';
+@use 'layout/secciones';
+@use 'layout/footer';
+
+//Components
+@use 'components/cards';
+@use 'components/floating';
+@use 'components/forms';
+@use 'components/header';
+@use 'components/body';
+
+// Pages
+@use 'pages/contacto';
+@use 'pages/galeria';

@@ -1,0 +1,15 @@
+<h1>Administración de Servicios en Tiempo Real</h1>
+
+<div id="services-list" class="services-container">
+  {{#each services}}
+    <div class="service-card" id="service-{{this._id}}">
+      <h3>{{this.title}}</h3>
+      <p>{{this.description}}</p>
+      <p><strong>Duración:</strong> {{this.duration}} min</p>
+      <p><strong>Precio:</strong> ${{this.price}}</p>
+    </div>
+  {{/each}}
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTime.js"></script>

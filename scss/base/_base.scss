@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    background-color: $beige-fondo;
+    font-family: $font-cuerpo;
+    color: $negro-suave; 
+
+    @include mobile {
+        font-size: 14px;
+    }
+}
+
+.container, .container-fluid {
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $font-titulos;
+}
+
+header {
+    .display-5 {
+        @include mobile {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.navbar {
+    @include mobile {
+        padding: 0.5rem;
+        .nav-link {
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba($rosa-medio, 0.2);
+        }
+    }
+}

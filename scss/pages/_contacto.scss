@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.mapa-contacto {
+    filter: grayscale(0.3) contrast(1.1);
+    border-radius: 15px;
+    border: 2px solid $rosa-medio;
+    @include sombra-suave;
+}

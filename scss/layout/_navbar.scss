@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.navbar {
+    background-color: $rosa-principal;
+    @include sombra-suave;
+    padding: 1rem 0;
+
+    .navbar-brand {
+        font-family: $font-titulos;
+        color: $rosa-medio;
+        font-size: 1.8rem;
+    }
+
+    .nav-item {
+        .nav-link {
+            color: $blanco;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            @include transicion;
+
+            &:hover {
+                color: $negro-suave;
+                transform: scale(1.1); 
+            }
+
+            &.active {
+                color: $negro-suave;
+                border-bottom: 2px solid $blanco;
+            }
+        }
+    }
+}
